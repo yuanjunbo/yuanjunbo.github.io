@@ -1,234 +1,140 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>åˆ‡å‰²è½®æ’­å›¾</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
-
-    .view {
-      width: 600px;
-      height: 400px;
-      margin: 100px auto;
-      position: relative;
-       /* perspective: 1500px;  */
-    }
-
-    ul {
-      width: 600px;
-      height: 400px;
-      list-style: none;
-      /* transform: rotate3d(1, 1, 1, 30deg);  */
-    }
-
-    li {
-      width: 120px;
-      height: 400px;
-      float: left;
-      position: relative;
-      transform-style: preserve-3d;
-      transition: all 1s;
-       /* transform: rotate3d(0.5, 0.5, 0.5, 30deg);   */
-    }
-
-    .clearfix::before,
-    .clearfix::after {
-      content: "";
-      height: 0;
-      line-height: 0;
-      visibility: hidden;
-      display: block;
-      clear: both;
-    }
-
-    .clearfix {
-      zoom: 0;
-    }
-
-    li span {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-    }
-
-    ul li:nth-child(1) span {
-      background-position: 0 0;
-    }
-
-    ul li:nth-child(2) span {
-      background-position: -120px 0;
-    }
-
-    ul li:nth-child(3) span {
-      background-position: -240px 0;
-    }
-
-    ul li:nth-child(4) span {
-      background-position: -360px 0;
-    }
-
-    ul li:nth-child(5) span {
-      background-position: -480px 0;
-    }
-
-    ul li span:nth-child(1) {
-      transform: translateZ(200px);
-      background-image: url("./img/1.jpg");
-    }
-
-    ul li span:nth-child(2) {
-      transform: translateY(-200px) rotateX(90deg);
-      background-image: url("./img/2.jpg");
-    }
-
-    ul li span:nth-child(3) {
-      transform: translateZ(-200px) rotateX(180deg);
-      background-image: url("./img/3.jpg");
-    }
-
-    ul li span:nth-child(4) {
-      transform: translateY(200px) rotateX(270deg);
-      background-image: url("./img/4.jpg");
-    }
-
-
-    .prev,
-    .next {
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      line-height: 60px;
-      top: 200px;
-      margin-top: -30px;
-      background-color: rgba(0, 0, 0, .6);
-      font: 40px consolas;
-      color: #fff;
-      text-align: center;
-      cursor: pointer;
-      /* left: 0 */
-    }
-
-    .next {
-      right: 0;
-    }
-  </style>
+<meta charset="gb2312">
+<title>ÇàÉ¬¤Î³õÏÄ-ÇéÂÂ²©¿ÍÄ£°å</title>
+<meta name="Keywords" content="²©¿ÍÄ£°å,ÇéÂÂ²©¿ÍÄ£°å" >
+<meta name="Description" content="ÇéÂÂ²©¿ÍÄ£°å" >
+<link href="css/index.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
 </head>
-
 <body>
-  <div class="view">
-    <ul class="clearfix">
-      <li>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </li>
-      <li>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </li>
-      <li>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </li>
-      <li>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </li>
-      <li>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </li>
-    </ul>
-    <span class="prev">&lt;</span>
-    <span class="next">&gt;</span>
+<header>
+  <h1><a href="/">ÇàÉ¬¤Î³õÏÄ</a></h1>
+  <p>³ÃÎÒÃÇ¶¼»¹ÄêÇá,¶àĞÀÉÍÏÂÑØÍ¾µÄ·ç¾°£¬²»Òª´í¹ıÁËÁ÷ÄêÀïÎÂÅ¯µÄÈËºÍÎï....</p>
+</header>
+<!--nav begin-->
+<div id="nav">
+  <ul>
+    <li><a href="/">Ê×Ò³</a></li>
+    <li><a href="#">¹ØÓÚÎÒ</a></li>
+    <li><a href="#">ÂıÉú»î</a></li>
+    <li><a href="#">Ä£°å·ÖÏí</a></li>
+    <li><a href="#">ÁôÑÔ°å</a></li>
+  </ul>
+</div>
+<!--nav end-->
+<div class="blank"></div>
+<div class="banner">
+  <ul class="boy_girl">
+    <li class="girlimg"><a href="/"><span>¹ØÓÚËı</span></a></li>
+    <li class="boyimg"><a href="/"><span>¹ØÓÚÎÒ</span></a></li>
+  </ul>
+  <ul class="texts">
+    <p><img src="images/t-1.png" alt="ÈËÉú£¬ÊÇÒ»³¡Ê¢´óµÄÓö¼û"></p>
+    <p><img src="images/t-2.png" alt="ÈôÄã¶®µÃ£¬¾ÍÇëÕäÏ§¡£"></p>
+    <p><img src="images/t-3.png" alt="ÎŞÂÛÏÂ¶à¾ÃµÄÓê£¬×îºó¶¼»áÓĞ²Êºç£»ÎŞÂÛÄã¶àÃ´±¯ÉË£¬ÒªÏàĞÅĞÒ¸£ÔÚÇ°·½µÈºò"></p>
+  </ul>
+</div>
+<div class="blank"></div>
+<div class="memorial_day">
+  <div class="time_axis"></div>
+  <ul>
+    <li class="n1"><a href="/">ÏàÓö</a>
+      <div class="dateview">2011-06-27</div>
+    </li>
+    <li class="n2"><a href="/">ÏàÊ¶</a>
+      <div class="dateview">2011-12-19</div>
+    </li>
+    <li class="n3"><a href="/">ÏàÖª</a>
+      <div class="dateview">2012-10-01</div>
+    </li>
+    <li class="n4"><a href="/">ÏàÁµ</a>
+      <div class="dateview">2013-02-14</div>
+    </li>
+    <li class="n5"><a href="/">Ïà°®</a>
+      <div class="dateview">2014-10-05</div>
+    </li>
+  </ul>
+</div>
+<div class="blank"></div>
+<article>
+  <div class="l_box">
+    <div class="about_me">
+      <h2>¹ØÓÚÎÒ</h2>
+      <ul>
+        <img src="images/boy.jpg">
+        <p>ÍøÃû£ºÑÀ³İÉ¹Ì«Ñô</p>
+        <p>Ö÷Ò³£ºwww.3dst.com</p>
+        <p>Ö°Òµ£º3DST¼¼ÊõÍøÕ¾³¤</p>
+      </ul>
+    </div>
+    <div class="about_he">
+      <h2>¹ØÓÚËı</h2><ul>
+        <img src="images/girl.jpg">
+        <p>ÍøÃû£ºDanceSmile | ¼´²½·ÇÑÌ</p>
+        <p>Ö÷Ò³£ºwww.yangqq.com</p>
+        <p>Ö°Òµ£ºÍøÕ¾Éè¼Æ¡¢ÍøÕ¾ÖÆ×÷</p>
+      </ul>
+      
+    </div>
+    <div class="newslist">
+      <h2>×îĞÂÈÕÖ¾</h2>
+      <ul>
+        <li><a href="/">Å®º¢¶¼ÓĞÀËÂşµÄĞ¡Çé»³</a></li>
+        <li><a href="/">Ò²ĞíÏÂ¸öÂ·¿Ú¾Í»áÓö¼ûÏ£Íû</a></li>
+        <li><a href="/"> 6ÔÂ±ÏÒµ¼¾£¬×£¸£ËÍ¸øÄã</a></li>
+        <li><a href="/"> Éú»î³£ÓĞÈ±Ï¯µÄ-¿É¸ãĞ¦´ÓÀ´²»È±Ï¯</a></li>
+        <li><a href="/"> ÎªÁËÒ»¸ö²»´æÔÚµÄÃÎ£¬Ö´ÄîÁËÄÇÃ´¶àÄê</a></li>
+        <li><a href="/"> ÃÃÃÃ£¬Ã÷ÌìÄã¾ÍÒª¼ŞÈËÀ²</a></li>
+        <li><a href="/"> Å®º¢¶¼ÓĞÀËÂşµÄĞ¡Çé»³</a></li>
+        <li><a href="/"> Ò²ĞíÏÂ¸öÂ·¿Ú¾Í»áÓö¼ûÏ£Íû</a></li>
+        <li><a href="/"> 6ÔÂ±ÏÒµ¼¾£¬×£¸£ËÍ¸øÄã</a></li>
+      </ul>
+    </div>
+    <div class="viny">
+      <ul>
+        <dl>
+          <dt class="art"><img src="images/artwork.png" alt="×¨¼­"></dt>
+          <dd class="icon-song"><span></span>ÄÏ·½¹ÃÄï</dd>
+          <dd class="icon-artist"><span></span>¸èÊÖ£ºÕÔÀ×</dd>
+          <dd class="icon-album"><span></span>×¨¼­£º¡¶ÕÔĞ¡À×¡·</dd>
+          <dd class="music">
+            <audio src="images/nf.mp3" controls></audio>
+          </dd>
+          <!--Ò²¿ÉÒÔÌí¼ÓloopÊôĞÔ ÒôÆµ¼ÓÔØµ½Ä©Î²Ê±£¬»áÖØĞÂ²¥·Å-->
+        </dl>
+      </ul>
+    </div>
   </div>
-  <script src="js/jquery-1.12.4.min.js"></script>
-  <script>
-    $(function () {
-      var count = 0;
-      var flag = true;
-      $(".next").on("click", function () {
-        if (flag) {
-          flag = false;
-          count++;
-          $("li").each(function (index) {
-            $(this).css({
-              "transform": "rotateX(" + -90 * count + "deg)",
-              "transition-delay": (index * 0.2) + "s"
-            })
-          })
-          setTimeout(function () {
-            flag = true;
-          }, 1000);
-        }
-      })
-      $(".prev").on("click", function () {
-        if (flag) {
-          flag = false;
-          count--;
-          $("li").each(function (index) {
-            $(this).css({
-              "transform": "rotateX(" + -90 * count + "deg)",
-              "transition-delay": (index * 0.2) + "s"
-            })
-          })
-          var timerid = setTimeout(function () {
-            flag = true;
-          }, 1000);
-        }
-      })
-      var timer = setInterval(function () {
-        if (flag) {
-          flag = false;
-          count++;
-          $("li").each(function (index) {
-            $(this).css({
-              "transform": "rotateX(" + -90 * count + "deg)",
-              "transition-delay": (index * 0.2) + "s"
-            })
-          })
-          setTimeout(function () {
-            flag = true;
-          }, 1000);
-        }
-      }, 1000)
-      $(".view").on("mouseover", function () {
-        clearInterval(timer);
-      })
-      $(".view").on("mouseout",function(){
-      timer = setInterval(function () {
-        if (flag) {
-          flag = false;
-          count++;
-          $("li").each(function (index) {
-            $(this).css({
-              "transform": "rotateX(" + -90 * count + "deg)",
-              "transition-delay": (index * 0.2) + "s"
-            })
-          })
-          setTimeout(function () {
-            flag = true;
-          }, 1000);
-        }
-      }, 1000)  
-      })
-
-    })
-  </script>
+  <!--l_box end -->
+  <div class="r_box">
+    <li> <a href="/"><img src="images/01.jpg"></a>
+      <h3><a href="/">ÄãÊÇÊ²Ã´ÈË±ã»áÓöÉÏÊ²Ã´ÈË</a></h3>
+      <p>ÓĞÊ±¾ÍÎªÁËÒ»¾äºİ»°£¬ÏñĞÄÍ·Ò»¿Ú¶¾¶¤£¬ÓÀÔ¶Âé¯w×ÅÇ×ÃÜ¸ĞÇé½»Á÷¡£¶ñÑÔ£¬ÕæÒªÉ÷³ö£¬Æ½ÈÕ¶àÕ\ĞÄ°®Óï£¬ÄË×î¼òÒ×Ö®ÑÊ©¡£</p>
+    </li>
+    <li> <a href="/"><img src="images/02.jpg"></a>
+      <h3><a href="/">°®ÇéÃ»ÓĞÓÀÔ¶£¬µØÀÏÌì»ÄÒ²×ß²»Íê</a></h3>
+      <p>Ò²Ğí£¬°®ÇéÃ»ÓĞÓÀÔ¶£¬µØÀÏÌì»ÄÒ²×ß²»Íê£¬ÉúÃüÖÕ½áµÄÄ©¶Ë£¬¿à¶ÌÇé³¤¡£Õ¾ÔÚËêÔÂµÄ±ß¶Ë£¬ÄÇĞ©ÃÀÀöµÄ¶¨¸ñ£¬ĞÄÉËµÄ¾øÁµ£¬¶¼±»ËÄ¼¾µÄÑÚÂñ£¬Ò»È¥²»·µ¡£Í½Ê£ÏÂÕâ»ÄÎßµÄ»¨ºÃÔÂÔ²£¬Ò»Â·ÏàËæ£¬Á÷ÀëÌìÑÄ±³¸ºÁËË­µÄË¼Äî£¿</p>
+    </li>
+    <li> <a href="/"><img src="images/03.jpg"></a>
+      <h3><a href="/">Å®º¢¶¼ÓĞÀËÂşµÄĞ¡Çé»³¡ª¡ªÀËÂşµÄÇó»é´Ê</a></h3>
+      <p>»¹ÔÚÎªÀËÂşµÄÇó»é´Ê¶ø·³ÄÕ²»ÖªµÀ¸ÃÔõÃ´ËµÂğ£¿Å®º¢×Ó¶¼ÓĞ×ÅÀËÂşµÄĞ¡Çé»³£¬¶ÔÓÚÇó»é¸üÊÇ±§×ÅÂúÂúµÄÀËÂşÆÚ´ı£¬Ò²Ï£ÍûÔÚÇó»éÄÇÒ»Ìì¶Ô·½¿ÉÒÔ¸ø×Ô¼ºÒ»¸ö×îÀËÂşµÄÇó»é´Ê¡£</p>
+    </li>
+    <li> <a href="/"><img src="images/04.jpg"></a>
+      <h3><a href="/">²Á¼ç¶ø¹ı</a></h3>
+      <p>¡¶²Á¼ç¶ø¹ı¡·ÎÄ/ÇåºÓÓã ±à»æ/Ìì³¯Óğ´ò¿ªÒ»ÉÈ´°£¬ÎÒ²»Ôø°ÑÄãÏëµÃÆ½³£¡£¿´¼¾½ÚÒ»Ò»¹ıÍù¡£ÄãÍ£ÁôµÄÄÇ¸öµØ·½£¬ÊÇ·ñÒÀÈ»»¨¶ù¿ª·Å£¿ÔÚÒ¹ÀïÊØ¿¿×ÅÃÎÖĞµÄ£¬ÏëÄÇ·Â·ğÇ°ÊÀÃú¿Ì½øĞÄ³¦µÄ</p>
+    </li>
+    <li> <a href="/"><img src="images/01.jpg"></a>
+      <h3><a href="/">²Á¼ç¶ø¹ı</a></h3>
+      <p>¡¶²Á¼ç¶ø¹ı¡·ÎÄ/ÇåºÓÓã ±à»æ/Ìì³¯Óğ´ò¿ªÒ»ÉÈ´°£¬ÎÒ²»Ôø°ÑÄãÏëµÃÆ½³£¡£¿´¼¾½ÚÒ»Ò»¹ıÍù¡£ÄãÍ£ÁôµÄÄÇ¸öµØ·½£¬ÊÇ·ñÒÀÈ»»¨¶ù¿ª·Å£¿ÔÚÒ¹ÀïÊØ¿¿×ÅÃÎÖĞµÄ£¬ÏëÄÇ·Â·ğÇ°ÊÀÃú¿Ì½øĞÄ³¦µÄ</p>
+    </li>
+  </div>
+</article>
+<footer>
+  <p>Design by DanceSmile</p>
+</footer>
 </body>
-
 </html>
